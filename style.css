@@ -1,0 +1,186 @@
+:root {
+    --primary-color: #28a745;
+    --secondary-color: #007bff;
+    --accent-color: #ffc107;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --footer-bg-color: #343a40;
+    --footer-link-color: #ffc107;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 40px 20px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.benefit-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: scale(1.05);
+}
+
+.benefit-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.cta-section {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 60px;
+    border-radius: 8px;
+}
+
+.cta-section h2 {
+    font-size: 2.5em;
+}
+
+.cta-section p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.cta-section a {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section a:hover {
+    background-color: #e0a800;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--footer-bg-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer nav a {
+    color: var(--footer-link-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+statistics-section {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+statistics-section h2 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+}
+
+statistics-item {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+a:focus, button:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+button, a {
+    transition: all 0.3s ease;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .benefit-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    .benefit-item {
+        padding: 20px;
+    }
+
+    .cta-section h2 {
+        font-size: 2em;
+    }
+
+    .cta-section p {
+        font-size: 1em;
+    }
+
+    .cta-section a {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
