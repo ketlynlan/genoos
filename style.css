@@ -125,19 +125,24 @@ footer nav a:hover {
     text-decoration: underline;
 }
 
-statistics-section {
+.statistics-section {
     background-color: #f1f1f1;
     padding: 40px 20px;
     text-align: center;
     margin-top: 60px;
 }
 
-statistics-section h2 {
+.statistics-section h2 {
     font-size: 2.5em;
     color: var(--primary-color);
 }
 
-statistics-item {
+.statistics-section p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.statistics-item {
     font-size: 1.5em;
     margin-top: 20px;
 }
