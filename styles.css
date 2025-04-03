@@ -1,0 +1,301 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis de cores */
+:root {
+    --primary-color: #003366;
+    --secondary-color: #ff9900;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --white-color: #ffffff;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 15px 0;
+}
+
+header .logo h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Hero (Home) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#home {
+    background: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 60px 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#home h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+#home p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e68900;
+}
+
+/* Seção Sobre */
+#sobre {
+    padding: 40px 20px;
+    background-color: var(--white-color);
+    text-align: center;
+}
+
+#sobre h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+#sobre ul {
+    list-style-type: none;
+    font-size: 1.1em;
+}
+
+#sobre ul li {
+    margin: 10px 0;
+}
+
+/* Seção Áreas de Atuação */
+#areas {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+#areas h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+#areas ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+#areas ul li {
+    margin: 0 20px;
+    font-size: 1.2em;
+}
+
+#areas ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+#areas ul li a:hover {
+    text-decoration: underline;
+}
+
+#areas div {
+    margin-top: 30px;
+    background-color: var(--white-color);
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#areas h3 {
+    font-size: 2em;
+    color: var(--primary-color);
+}
+
+/* Seção Contato */
+#contato {
+    padding: 40px 20px;
+    background-color: var(--white-color);
+}
+
+#contato h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 60%;
+    padding: 15px; /* Aumenta o espaçamento interno */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    width: 60%;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 12px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form button:hover {
+    background-color: #002244;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Links de Contato */
+.contatos p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.contatos a {
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contatos a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+footer ul li {
+    margin: 5px 10px;
+}
+
+footer ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    form input, form textarea, form button {
+        width: 90%; /* Ajusta o formulário para telas menores */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Empilha os itens do menu */
+        align-items: center;
+    }
+
+    #areas ul {
+        flex-direction: column; /* Empilha os itens da lista de áreas de atuação */
+    }
+
+    .contatos p {
+        font-size: 1em; /* Reduz o tamanho do texto em telas menores */
+    }
+}
+
+/* Foco em links e botões */
+a:focus, button:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+a, button {
+    transition: all 0.3s ease;
+}
